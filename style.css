@@ -1,0 +1,9 @@
+canvas {
+    position: relative;
+    z-index: -3 !important;
+  }
+
+body {
+    background: rgb(255, 204, 0);
+    background: linear-gradient(90deg, rgba(255, 204, 0), rgba(92, 92, 255));
+}

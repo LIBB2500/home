@@ -5,12 +5,13 @@ function setup(){
     cnv.position(0, 0);
     cnv.style('z-index', '-3');
 	cnv.parent('canvascontainer');
-	background(255, 255, 255);
+	//background(255, 255, 255);
 }
 
 function draw(){
-	clear();
-    setGradient();
+	//clear();
+    setFillGradient();
+    makeBubbles();
 }
 
 function windowResized(){
@@ -19,8 +20,13 @@ function windowResized(){
     resizeCanvas(windowWidth, windowHeight);
 }
 
-function setGradient() {
+function setFillGradient() {
     var inter = map(mouseX, 0, windowWidth, 0, 1);
     var c = lerpColor(color(255, 204, 0), color(92, 92, 255), inter);
-    background(c);
+    fill(c);
+    stroke(c);
+}
+
+function makeBubbles() {
+    ellipse(mouseX, mouseY, 100, 100);
 }
