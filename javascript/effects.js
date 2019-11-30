@@ -2,7 +2,7 @@ var bubbleSize = 100;
 
 function setup(){
 	canvas_width = windowWidth;
-	canvas_height = windowHeight;
+    canvas_height = $(document).height();
     cnv = createCanvas(canvas_width, canvas_height);
     cnv.position(0, 0);
     cnv.style('z-index', '-3');
@@ -24,7 +24,7 @@ function draw(){
 
 function windowResized() {
 	canvas_width = windowWidth;
-    canvas_height = windowHeight;
+    canvas_height = $(document).height();
     if (canvas_width < 400){
         bubbleSize = 60;
     } else if (canvas_width < 800) {
