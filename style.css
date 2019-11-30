@@ -34,19 +34,21 @@ h5.date {
   padding: 2px;
   overflow: auto;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 12px;
 }
 
 .thursday {
   width: 50%;
   padding: 2px;
   overflow: auto;
+  font-size: 12px;
 }
 
 .dayscontainer {
   width: 100%;
   height: 200px;
   text-align: left;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   overflow: scroll;
 }
 
@@ -58,6 +60,7 @@ h5.date {
   border-width: thin;
   padding: 5px;
   margin: 5px;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 hr {
@@ -77,3 +80,19 @@ a:active {
   color: #e66464;
   background: #737efa;
 }
+
+ul {
+  margin-left:0px;
+  padding-left: 15px;
+}
+
+@media only screen and (min-width: 400px) {
+  .tuesday {
+    font-size: 14px;
+  }
+  
+  .thursday {
+    font-size: 14px;
+  }
+}
+
