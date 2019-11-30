@@ -54,13 +54,33 @@ h5.date {
 
 .weekcontainer {
   text-align: left;
-  width: 80%;
+  width: 90%;
   border-style: solid;
   display: block;
   border-width: thin;
   padding: 5px;
   margin: 5px;
   background: rgba(255, 255, 255, 0.08);
+}
+
+.basiccontainer {
+  width: 100%;
+  margin: auto;
+  border-style: solid;
+  display: block;
+  border-width: thin;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.resources-sub {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.resources-subsub {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 hr {
@@ -84,6 +104,15 @@ a:active {
 ul {
   margin-left:0px;
   padding-left: 15px;
+}
+
+.resourcessection {
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+}
+
+ul.resources {
+  margin-left: 10px;
 }
 
 @media only screen and (min-width: 400px) {
