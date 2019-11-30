@@ -108,7 +108,9 @@ ul {
 
 .resourcessection {
   background: rgba(255, 255, 255, 0.2);
-  font-size: 14px;
+  font-size: 12px;
+  border-style: solid;
+  border-width: thin;
 }
 
 ul.resources {
@@ -121,6 +123,10 @@ ul.resources {
   }
   
   .thursday {
+    font-size: 14px;
+  }
+
+  .resourcessection {
     font-size: 14px;
   }
 }
