@@ -9,9 +9,9 @@ function setup(){
     cnv.parent('canvascontainer');
     colorMode(RGB); // Try changing to HSB or HSL.
     if (canvas_width < 400){
-        bubbleSize = 20;
-    } else if (canvas_width < 800) {
         bubbleSize = 60;
+    } else if (canvas_width < 800) {
+        bubbleSize = 80;
     } else {
         bubbleSize = 100;
     }  
@@ -26,12 +26,12 @@ function windowResized() {
 	canvas_width = windowWidth;
     canvas_height = windowHeight;
     if (canvas_width < 400){
-        bubbleSize = 20;
-    } else if (canvas_width < 800) {
         bubbleSize = 60;
+    } else if (canvas_width < 800) {
+        bubbleSize = 80;
     } else {
         bubbleSize = 100;
-    }    
+    }   
     resizeCanvas(windowWidth, windowHeight);
 }
 
