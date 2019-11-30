@@ -1,3 +1,5 @@
+var bubbleSize = 100;
+
 function setup(){
 	canvas_width = windowWidth;
 	canvas_height = windowHeight;
@@ -6,6 +8,13 @@ function setup(){
     cnv.style('z-index', '-3');
     cnv.parent('canvascontainer');
     colorMode(RGB); // Try changing to HSB or HSL.
+    if (canvas_width < 400){
+        bubbleSize = 20;
+    } else if (canvas_width < 800) {
+        bubbleSize = 60;
+    } else {
+        bubbleSize = 100;
+    }  
 }
 
 function draw(){
@@ -13,9 +22,16 @@ function draw(){
     makeBubble();
 }
 
-function windowResized(){
+function windowResized() {
 	canvas_width = windowWidth;
-	canvas_height = windowHeight;
+    canvas_height = windowHeight;
+    if (canvas_width < 400){
+        bubbleSize = 20;
+    } else if (canvas_width < 800) {
+        bubbleSize = 60;
+    } else {
+        bubbleSize = 100;
+    }    
     resizeCanvas(windowWidth, windowHeight);
 }
 
@@ -29,5 +45,5 @@ function setFillGradient() {
 }
 
 function makeBubble() {
-    ellipse(mouseX, mouseY, 100, 100);
+    ellipse(mouseX, mouseY, bubbleSize, bubbleSize);
 }
