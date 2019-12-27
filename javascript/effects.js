@@ -37,7 +37,8 @@ function windowResized() {
 
 function setFillGradient() {
     var inter = map(mouseX, 0, windowWidth, 0, 1);
-    var c = lerpColor(color(250, 85, 85), color(132, 142, 245), inter);
+    var c = lerpColor(color(171, 171, 171), color(134, 141, 219), inter);
+    //var c = lerpColor(color(250, 85, 85), color(132, 142, 245), inter);
     //var c = lerpColor(color(255, 204, 0), color(92, 92, 255), inter);
     //var c = lerpColor(color('hsl(48, 100%, 50%)'), color('hsl(240, 100%, 68%)'), inter)
     fill(c);

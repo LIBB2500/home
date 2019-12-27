@@ -4,28 +4,35 @@ canvas {
   }
 
 body {
-    background: rgb(255, 204, 0);
-    background: linear-gradient(90deg, rgba(230, 100, 101), rgba(145, 152, 229));
+    background: rgb(240, 240, 240);
+    background: linear-gradient(90deg, rgb(182, 181, 181), rgba(145, 152, 229));
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .nav-link {
   font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .navbar-brand {
   font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 h1.mt-5 {
   font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 h4.date {
   font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 h5.date {
   font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .tuesday {
@@ -71,6 +78,8 @@ h5.date {
   border-width: thin;
   padding: 20px;
   background: rgba(255, 255, 255, 0.08);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .resources-sub {
@@ -111,6 +120,8 @@ ul {
   font-size: 12px;
   border-style: solid;
   border-width: thin;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 ul.resources {
