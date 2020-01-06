@@ -12,17 +12,17 @@ body {
 
 .nav-link {
   font-weight: normal;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
 }
 
 .navbar-brand {
   font-weight: normal;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
 }
 
 h1.mt-5 {
   font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
 }
 
 h4.date {
