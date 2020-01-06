@@ -128,6 +128,11 @@ ul.resources {
   margin-left: 10px;
 }
 
+
+.imgbanner {
+    width: 400px;
+}
+
 @media only screen and (min-width: 400px) {
   .tuesday {
     font-size: 14px;
@@ -139,6 +144,18 @@ ul.resources {
 
   .resourcessection {
     font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .imgbanner {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .imgbanner {
+    width: 1000px;
   }
 }
 
