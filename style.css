@@ -130,7 +130,7 @@ ul.resources {
 
 
 .imgbanner {
-    width: 400px;
+    width: 350px;
 }
 
 @media only screen and (min-width: 400px) {
@@ -144,6 +144,12 @@ ul.resources {
 
   .resourcessection {
     font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .imgbanner {
+    width: 400px;
   }
 }
 
