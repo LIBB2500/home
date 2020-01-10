@@ -124,6 +124,10 @@ ul {
   Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+.resourcessubcontainer {
+  display: none;
+}
+
 ul.resources {
   margin-left: 10px;
 }

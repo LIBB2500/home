@@ -58,8 +58,13 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h1 class="mt-5">Resources</h1>
-        <div class="basiccontainer text-center">
-              <h5 class="resources-sub">Image</h5>
+        <button class="resourcesButton" onclick="showImageResources()">Image</button>
+        <button class="resourcesButton" onclick="showVideoResources()">Video</button>
+        <button class="resourcesButton" onclick="showSoundResources()">Sound</button>
+        <button class="resourcesButton" onclick="showWebResources()">Web</button>
+        <button class="resourcesButton" onclick="showCodeResources()">Code</button>
+        <div id="imageResources" class="basiccontainer resourcessubcontainer text-center">
+          <h5 class="resources-sub">Image</h5>
               <hr>
               <div class="resourcessection text-left">
                 <h5 class="resources-subsub">Adobe Photoshop</h5>
@@ -79,6 +84,10 @@
                   <li> <a href="">Image file types</a>
                   <li> <a href="">Printing tips</a>
                 </ul>
+                <h5 class="resources-subsub">Glitch Art</h5>
+                <ul class="resources">
+                  <li><a href="https://docs.google.com/document/d/19CJ4_5dHtevzjJCmg54n2ZMFlRjGxclBB_2OaX_8tEQ/edit?usp=sharing" target="_blank">Google doc where I've put tons of resources</a>
+                </ul>
                 <h5 class="resources-subsub">Snapchat Filters/Lenses</h5>
                 <ul class="resources">
                   <li><a href="https://create.snapchat.com/org/guest/purchase/choose-product">Get Started</a>
@@ -86,7 +95,7 @@
                 <hr>
               </div>
         </div>
-        <div class="basiccontainer text-center">
+        <div id="videoResources" class="basiccontainer resourcessubcontainer text-center">
             <h5 class="resources-sub">Video</h5>
             <hr>
             <div class="resourcessection text-left">
@@ -97,7 +106,7 @@
                 </ul>              
             </div>
         </div>
-        <div class="basiccontainer text-center">
+        <div id="soundResources" class="basiccontainer resourcessubcontainer text-center">
               <h5 class="resources-sub">Sound</h5>
               <hr>
               <div class="resourcessection text-left">
@@ -115,7 +124,7 @@
                     </ul>
               </div>
           </div>
-        <div class="basiccontainer text-center">
+        <div id="webResources" class="basiccontainer resourcessubcontainer text-center">
               <h5 class="resources-sub">Web</h5>
               <hr>
               <div class="resourcessection text-left">
@@ -126,7 +135,7 @@
                   </ul>    
                 </div>
         </div>
-        <div class="basiccontainer text-center">
+        <div id="codeResources" class="basiccontainer resourcessubcontainer text-center">
               <h5 class="resources-sub">Code</h5>
               <hr>
               <div class="resourcessection text-left">
@@ -151,6 +160,61 @@
     </div>
 
   </div>
+
+  <script>
+  
+  var imageResourcesDiv = document.getElementById("imageResources");
+  var videoResourcesDiv = document.getElementById("videoResources");
+  var soundResourcesDiv = document.getElementById("soundResources");
+  var webResourcesDiv   = document.getElementById("webResources");
+  var codeResourcesDiv  = document.getElementById("codeResources");
+  videoResourcesDiv.style.display = "none";
+  soundResourcesDiv.style.display = "none";
+  webResourcesDiv.style.display = "none";
+  codeResourcesDiv.style.display = "none";
+  imageResourcesDiv.style.display = "block";
+
+  function showImageResources() {
+    videoResourcesDiv.style.display = "none";
+    soundResourcesDiv.style.display = "none";
+    webResourcesDiv.style.display = "none";
+    codeResourcesDiv.style.display = "none";
+    imageResourcesDiv.style.display = "block";
+  }
+
+  function showVideoResources() {
+    videoResourcesDiv.style.display = "block";
+    soundResourcesDiv.style.display = "none";
+    webResourcesDiv.style.display = "none";
+    codeResourcesDiv.style.display = "none";
+    imageResourcesDiv.style.display = "none";
+  }
+
+  function showSoundResources() {
+    videoResourcesDiv.style.display = "none";
+    soundResourcesDiv.style.display = "block";
+    webResourcesDiv.style.display = "none";
+    codeResourcesDiv.style.display = "none";
+    imageResourcesDiv.style.display = "none";
+  }
+
+  function showWebResources() {
+    videoResourcesDiv.style.display = "none";
+    soundResourcesDiv.style.display = "none";
+    webResourcesDiv.style.display = "block";
+    codeResourcesDiv.style.display = "none";
+    imageResourcesDiv.style.display = "none";
+  }
+
+  function showCodeResources() {
+    videoResourcesDiv.style.display = "none";
+    soundResourcesDiv.style.display = "none";
+    webResourcesDiv.style.display = "none";
+    codeResourcesDiv.style.display = "block";
+    imageResourcesDiv.style.display = "none";
+  }
+
+  </script>
 
   <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.slim.min.js"></script>
