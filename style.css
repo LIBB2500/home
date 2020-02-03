@@ -30,6 +30,11 @@ h4.date {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+h4.projecttitle {
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
 h5.date {
   font-weight: bold;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -68,6 +73,25 @@ h5.date {
   padding: 5px;
   margin: 5px;
   background: rgba(255, 255, 255, 0.08);
+}
+
+.projectcontainer {
+  text-align: left;
+  width: 90%;
+  border-style: solid;
+  display: block;
+  border-width: thin;
+  padding: 5px;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.projectdescription {
+  width: 100%;
+  height: 50px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.2);
+  overflow: scroll;
 }
 
 .basiccontainer {
