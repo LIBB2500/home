@@ -6,8 +6,7 @@ canvas {
   }
 
 body {
-    background: rgb(240, 240, 240);
-    background: linear-gradient(90deg, rgb(182, 181, 181), rgba(145, 152, 229));
+    background: #000000;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
     Helvetica, Arial, "Lucida Grande", sans-serif;
 }
