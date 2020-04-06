@@ -171,7 +171,8 @@ ul.resources {
 
 
 .imgbanner {
-    width: 350px;
+  max-width: 80%;
+  max-height: 80%;
 }
 
 @media only screen and (min-width: 400px) {
@@ -188,21 +189,5 @@ ul.resources {
   }
 }
 
-@media only screen and (min-width: 400px) {
-  .imgbanner {
-    width: 400px;
-  }
-}
 
-@media only screen and (min-width: 600px) {
-  .imgbanner {
-    width: 600px;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  .imgbanner {
-    width: 1000px;
-  }
-}
 
