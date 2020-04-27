@@ -39,7 +39,13 @@
     }
 
     img {
-       height: 200px;
+      max-width:70%;
+      max-height:70%;
+    }
+
+    video {
+      max-width:70%;
+      max-height:70%;    
     }
 
 
@@ -51,7 +57,7 @@ a.project-category:hover {
 
 
 .box {
-  box-shadow: 0 0 0 1px #ea638a inset;
+  box-shadow: 0 0 0 .25px #ea638a inset;
   text-align: center;
   background-color: #1a1a1a;
   color: #000000;
@@ -117,7 +123,7 @@ a.portfolio-box {
 
 .container {
   width: 100%;
-  min-height: 300px;  
+  min-height: 500px;  
   text-align: center;
   margin: auto;
 }
@@ -146,31 +152,18 @@ a.portfolio-box {
   .box {
     width: 50%;
   }
-
-  img {
-    height: 270px;
-  }
 }
 
 @media only screen and (min-width: 800px){
   .box {
     width: 50%;
   }
-
-  img {
-        height: 220px;
-    }
 }
 
 @media only screen and (min-width: 992px){
   .box {
     width: 25%;
   }
-
-  img {
-    height: 250px;
-    float:left;
-    }
 }
 
   </style>
