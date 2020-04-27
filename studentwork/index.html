@@ -8,6 +8,13 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
 
   <title>Celebration</title>
 
@@ -72,58 +79,74 @@ div.center-cropped img {
   transform: translateX(-50%);
 }
 
+.project-name {
+  font-size: 1.5rem;
+
+}
+
+.project-category {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;  
+}
+
+a.project-category:hover {
+  text-decoration: none;
+  
+}
+
+.box {
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0px;
+  margin: auto;
+  width: 100%;
+  height: 250px;
+}
+
+.green-box:hover {
+  background-color: #a7f542;
+}
+
+.blue-box:hover {
+  background-color: #42f5f2;
+}
+
+.pink-box:hover {
+  background-color: #f20081;
+}
+
+.black-section {
+  background-color: #000000;
+}
+
+
+a.portfolio-box {
+  font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.portfolio-box-caption {
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
 
 @media only screen and (min-width: 500px) {
-  div.center-cropped {
-  width: 500px;
-  height: 600px;
-  overflow:hidden;
-}
-div.center-cropped img {
-  height: 100%;
-  min-width: 160%;
-  left: 50%;
-  position: relative;
-  transform: translateX(-50%);
-}
-  li {
-        display: inline;
-    }
-    ul {
-    font-size: .8rem;
+  .box {
+    width: 50%;
   }
 }
 
 @media only screen and (min-width: 800px){
-  div.center-cropped {
-    width: 900px;
-    height: 703px;
-    overflow:hidden;
-  }
-  div.center-cropped img {
-    height: 100%;
-    min-width: 100%;
-    left: 50%;
-    position: relative;
-    transform: translateX(-50%);
+  .box {
+    width: 50%;
   }
 }
 
 @media only screen and (min-width: 1024px){
-  div.center-cropped {
-    width: 1200px;
-    height: 1000px;
-    overflow:hidden;
-  }
-  div.center-cropped img {
-    height: 100%;
-    min-width: 100%;
-    left: 50%;
-    position: relative;
-    transform: translateX(-50%);
-  }
-  ul {
-    font-size: 1.5rem;
+  .box {
+    width: 25%;
   }
 }
 
@@ -138,30 +161,143 @@ div.center-cropped img {
   <!-- Page Content -->
   <div id="canvascontainer" class="container">
 
-  <!-- Navigation -->
-  <div class="nav-section">
-  <ul>
-    <li><a class="nav-link" href="/studentwork/graphic/">GRAPHIC DESIGN</a></li>||
-    <li>
-        <a class="nav-link green" href="/studentwork/laser/">LASER CUTTING</a>
-      </li>||
-    <li>
-      <a class="nav-link pink" href="/studentwork/animation-video/">ANIMATION / VIDEO</a>
-    </li> ||     
-    <li>
-        <a class="nav-link blue" href="/studentwork/code/">CODE</a>
-      </li>   
-  </ul>
-</div>    
 
       <center>
-        <div class="center-cropped">
+        <img src="../images/banner-transparent-celebration.png">
+
+        <!--<div class="center-cropped">
           <img src="../images/banner-transparent-celebration.png">
-        </div>
+        </div>-->
       </center>
     </div>
 
   </div>
+
+
+
+
+
+<section class="p-0 black-section" id="portfolio">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+
+        <a class="portfolio-box box green-box" href="/studentwork/graphic/coverart/">
+            <!--<img class="img-fluid" src="img/portfolio/gifs/theshow-optimized.gif" alt="">-->
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-name">
+                  Cover Art
+                </div>
+                <div class="project-category text-faded">
+                  Blah blah blah
+                </div>
+            </div>
+        </div>
+      </a>
+
+          <a class="portfolio-box box pink-box" href="/studentwork/graphic/ar/">
+              <!--<img class="img-fluid" src="img/portfolio/gifs/theshow-optimized.gif" alt="">-->
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-name">
+                    Augmented Reality
+                  </div>
+                  <div class="project-category text-faded">
+                    Blah blah blah
+                  </div>
+              </div>
+          </div>
+        </a>
+
+            <a class="portfolio-box box blue-box" href="/studentwork/graphic/flyers/">
+                <!--<img class="img-fluid" src="img/portfolio/gifs/theshow-optimized.gif" alt="">-->
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-name">
+                      Event flyers
+                    </div>
+                    <div class="project-category text-faded">
+                      Blah blah blah
+                    </div>
+                </div>
+            </div>
+          </a>
+
+              <a class="portfolio-box box green-box" href="/studentwork/laser/">
+                  <!--<img class="img-fluid" src="img/portfolio/gifs/theshow-optimized.gif" alt="">-->
+                  <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                      <div class="project-name">
+                        Laser Cut Lanterns
+                      </div>
+                      <div class="project-category text-faded">
+                        Blah blah blah
+                      </div>
+                    </div>
+              </div>
+            </a>
+
+                <a class="portfolio-box box pink-box" href="/studentwork/code/">
+                    <!--<img class="img-fluid" src="img/portfolio/gifs/theshow-optimized.gif" alt="">-->
+                    <div class="portfolio-box-caption">
+                      <div class="portfolio-box-caption-content">
+                        <div class="project-name">
+                          Interactive Games & Animations
+                        </div>
+                        <div class="project-category text-faded">
+                          Blah blah blah
+                        </div>
+                    </div>
+                </div>
+              </a>
+
+                  <a class="portfolio-box box blue-box" href="/studentwork/animation-video/gifs/">
+                      <!--<img class="img-fluid" src="img/portfolio/gifs/theshow-optimized.gif" alt="">-->
+                      <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                          <div class="project-name">
+                            Animated GIFs
+                          </div>
+                          <div class="project-category text-faded">
+                            Blah blah blah
+                          </div>
+                      </div>
+                  </div>
+                </a>
+
+                    <a class="portfolio-box box green-box" href="/studentwork/animation-video/music-videos/">
+                        <!--<img class="img-fluid" src="img/portfolio/gifs/theshow-optimized.gif" alt="">-->
+                        <div class="portfolio-box-caption">
+                          <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                              Music Video Projects
+                            </div>
+                            <div class="project-category text-faded">
+                              Blah blah blah
+                            </div>
+                          </div>
+                    </div>
+                  </a>
+
+                      <a class="portfolio-box box pink-box" href="/studentwork/animation-video/motion-graphics/">
+                          <!--<img class="img-fluid" src="img/portfolio/gifs/theshow-optimized.gif" alt="">-->
+                          <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                              <div class="project-name">
+                                Motion Graphics
+                              </div>
+                              <div class="project-category text-faded">
+                                Blah blah blah
+                              </div>
+                            </div>
+                      </div>
+                    </a>
+                                                                                                                                                    
+    </div>
+  </div>
+</section>
+
+
 
   <script>
 
