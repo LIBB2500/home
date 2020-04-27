@@ -12,7 +12,11 @@ function setup(){
     cnv = createCanvas(canvas_width, canvas_height);
     cnv.position(0, 0);
     cnv.style('z-index', '-3');
-    cnv.parent('canvascontainer');
+	cnv.parent('canvascontainer');
+	startDrawing();
+}
+
+function startDrawing() {
 	background(0, 0, 0);
 	for(var i = 0; i < nums; i++){
 		particles_a[i] = new Particle(random(0, width),random(0,height));
@@ -83,3 +87,8 @@ function Particle(x, y){
 		ellipse(this.pos.x, this.pos.y, r, r);
 	}
 }
+
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+	startDrawing();
+  }

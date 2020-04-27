@@ -25,25 +25,6 @@
       z-index: -3 !important;
     }
 
-
-    ul {
-        z-index: 2 !important;
-        text-align: center;
-        list-style-type: none;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        font-family: 'Nova Mono', monospace;
-        font-size: .6rem;
-        /*background: rgb(242,0,129);
-        background: linear-gradient(90deg, rgba(242,0,129,1) 0%, rgba(145,135,191,1) 34%, rgba(66,245,242,1) 63%, rgba(123,245,142,1) 80%, rgba(167,245,66,1) 100%);*/
-        background: #000000;
-    }
-
-    li {
-        display: block;
-    }
-
     a {
         color: #ffffff;
         text-decoration: none;
@@ -54,30 +35,9 @@
     }
 
     img {
-        max-width: 60%;
-        max-height: 60%;
+       height: 200px;
     }
 
-    .imgbanner {
-        z-index: -1 !important;
-    }
-    .nav-section {
-        background: #000000;
-        padding: 8px;
-    }
-
-div.center-cropped {
-  width: 400px;
-  height: 600px;
-  overflow:hidden;
-}
-div.center-cropped img {
-  height: 100%;
-  min-width: 180%;
-  left: 50%;
-  position: relative;
-  transform: translateX(-50%);
-}
 
 .project-name {
   font-size: 1.5rem;
@@ -135,38 +95,36 @@ a.portfolio-box {
 }
 
 
-
-.top-container {
-  width: 100%;
-  min-height: 400px;
-}
-
 .bottom-container {
   width: 100%;
-  min-height: 1000px;
 }
 
 .container {
   width: 100%;
-  min-height: 400px;  
+  min-height: 300px;  
   text-align: center;
+  margin: auto;
 }
 
 .banner-container {
-  width: 100%;
-  display: block;
-  height: auto;
+  width: 50%;
+  display: inline-block;
+  text-align: center;
 }
 
 .video-container {
-  width: 100%;
-  display:block;
-  height: auto;
+  width: 50%;
+  display:inline-block;
+  text-align: center;
 }
 
 @media only screen and (min-width: 500px) {
   .box {
     width: 50%;
+  }
+
+  img {
+    height: 270px;
   }
 }
 
@@ -174,12 +132,21 @@ a.portfolio-box {
   .box {
     width: 50%;
   }
+
+  img {
+        height: 220px;
+    }
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 992px){
   .box {
     width: 25%;
   }
+
+  img {
+    height: 250px;
+    float:left;
+    }
 }
 
   </style>
@@ -195,8 +162,12 @@ a.portfolio-box {
 
 
     <div id="canvascontainer" class="container">
-      <div class="banner-container"><img src="../images/banner-transparent-celebration.png"></div>
-      <div class="video-container"><iframe style="width:444px; height:250px;" src="https://www.youtube.com/embed/K1MuKeRR2yM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+      <img src="../images/banner-transparent-celebration-small.png">
+      <iframe width="444" height="250" src="https://www.youtube.com/embed/K1MuKeRR2yM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <!--<div class="banner-container"><img src="../images/banner-transparent-celebration-small.png"></div>
+      <div class="video-container"><iframe style="width:444px; height:250px;" src="https://www.youtube.com/embed/K1MuKeRR2yM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>-->
     </div>
 
     <div class="bottom-container">
