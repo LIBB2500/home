@@ -43,29 +43,22 @@
     }
 
 
-.project-name {
-  font-size: 1.5rem;
-
-}
-
-.project-category {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;  
-}
 
 a.project-category:hover {
   text-decoration: none;
   
 }
 
+
 .box {
+  box-shadow: 0 0 0 1px #ea638a inset;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #1a1a1a;
   color: #000000;
   padding: 0px;
   margin: auto;
   width: 100%;
   height: 250px;
-  border: 1px solid black;
 }
 
 .green-box:hover {
@@ -96,8 +89,27 @@ a.portfolio-box {
 .portfolio-box-caption {
   padding-top: 20%;
   padding-bottom: 20%;
+  height: 20%;
 }
 
+.project-name  {
+  font-size: 1.6rem;
+  height: 80%;
+  text-transform: uppercase;
+}
+
+.white-background {
+  color: #ffffff;
+  padding: 4px;
+  padding-top: 8px;
+  text-align: center;
+}
+
+.project-category {
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;  
+
+}
 
 .bottom-container {
   width: 100%;
@@ -120,6 +132,14 @@ a.portfolio-box {
   width: 50%;
   display:inline-block;
   text-align: center;
+}
+
+.splitter {
+  border: 2px solid #ffffff;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: -30px;
+  width: 20%;
 }
 
 @media only screen and (min-width: 500px) {
@@ -181,7 +201,7 @@ a.portfolio-box {
                 <div class="portfolio-box-caption">
                   <div class="portfolio-box-caption-content">
                     <div class="project-name">
-                      Cover Art
+                      <span class="white-background">Cover Art <center><hr class="splitter"></center></span>
                     </div>
                     <div class="project-category text-faded">
                       Custom cover artwork made with Adobe Photoshop for albums, movies, and more. 
@@ -190,12 +210,12 @@ a.portfolio-box {
             </div>
           </a>
     
-              <a class="portfolio-box box pink-box" href="/studentwork/graphic/ar/">
+              <a class=" portfolio-box box pink-box" href="/studentwork/graphic/ar/">
                   <!--<img class="img-fluid" src="img/portfolio/gifs/theshow-optimized.gif" alt="">-->
                   <div class="portfolio-box-caption">
                     <div class="portfolio-box-caption-content">
                       <div class="project-name">
-                        Augmented Reality
+                        <span class="white-background">Augmented Reality<center><hr class="splitter"></center></span>
                       </div>
                       <div class="project-category text-faded">
                         Artworks that display Augmented Reality visuals when viewed through a phone app.
@@ -209,7 +229,7 @@ a.portfolio-box {
                     <div class="portfolio-box-caption">
                       <div class="portfolio-box-caption-content">
                         <div class="project-name">
-                          Event flyers
+                          <span class="white-background">Event flyers<center><hr class="splitter"></center></span>
                         </div>
                         <div class="project-category text-faded">
                           Flyers and posters for fictional and non-fictional events.
@@ -223,7 +243,7 @@ a.portfolio-box {
                       <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                           <div class="project-name">
-                            Laser Cut Lanterns
+                            <span class="white-background">Laser Cut Lanterns<center><hr class="splitter"></center></span>
                           </div>
                           <div class="project-category text-faded">
                             Custom laser cut designs made in Adobe Illustrator for 6-sided wooden lanterns.
@@ -237,7 +257,7 @@ a.portfolio-box {
                         <div class="portfolio-box-caption">
                           <div class="portfolio-box-caption-content">
                             <div class="project-name">
-                              Interactive Games & Animations
+                              <span class="white-background">Interactive Projects<center><hr class="splitter"></center></span>
                             </div>
                             <div class="project-category text-faded">
                               Games, animations, and artwork that you can interact with using the mouse and keyboard.
@@ -251,7 +271,7 @@ a.portfolio-box {
                           <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                               <div class="project-name">
-                                Animated GIFs
+                                <span class="white-background">Animated GIFs<center><hr class="splitter"></center></span>
                               </div>
                               <div class="project-category text-faded">
                                 Looping animated GIFs created frame by frame.
@@ -265,7 +285,7 @@ a.portfolio-box {
                             <div class="portfolio-box-caption">
                               <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                  Music Video Projects
+                                  <span class="white-background">Video Scoring<center><hr class="splitter"></center></span>
                                 </div>
                                 <div class="project-category text-faded">
                                   Video projects made in Adobe Premiere Pro that include music created in GarageBand.
@@ -279,7 +299,7 @@ a.portfolio-box {
                               <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
                                   <div class="project-name">
-                                    Motion Graphics
+                                    <span class="white-background">Motion Graphics<center><hr class="splitter"></center></span>
                                   </div>
                                   <div class="project-category text-faded">
                                     Motion graphics made in Adobe After Effects for a quick in-class assignment.
